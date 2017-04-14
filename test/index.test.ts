@@ -1,10 +1,14 @@
 import assert = require('assert')
-import doSomething from '../src'
+import Redis from '../src'
 
 
 suite('index', () => {})
 
 
-test('index', () => {
-  assert.equal(5, doSomething(1))
+test('index', async () => {
+  const client = Redis.createClient({})
+
+  await client.setAsync('testValue', '42')
+  const val = await client.getAsync('testValue')
+  assert.equal('42', val)
 })
