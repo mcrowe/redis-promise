@@ -1,6 +1,6 @@
 {
   "name": "@mcrowe/redis-promise",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Promise-based Redis client for Typescript and Javascript",
   "author": "Mitch Crowe <code@mitchcrowe.com> (http://www.mitchcrowe.com)",
   "license": "ISC",
